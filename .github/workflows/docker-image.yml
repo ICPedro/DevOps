@@ -7,10 +7,12 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  test:
+    name: Test
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout
       - uses: actions/checkout@v2
       - name: Use Node.js
         uses: actions/setup-node@v2
