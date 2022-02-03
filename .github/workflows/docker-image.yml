@@ -16,8 +16,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Use Node.js
         uses: actions/setup-node@v2
-      
-      - working-directory: DevOps/capstone_project/hello-world/  
-      - run: npm install
+        
+      - run: npm ci
       - run: npm test
       - run: npm start
